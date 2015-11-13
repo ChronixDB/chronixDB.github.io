@@ -1,0 +1,25 @@
+<!-- features Grid Section -->
+<section id="features" class="bgWhite">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Why Chronix</h2>
+                <hr class="star-white">
+            </div>
+        </div>
+        <div class="row">
+            {% for feature in site.features %}
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="img/features/{{ feature.img }}" alt="{{ post.alt }}">
+
+                    <div class="caption">
+                        <h3>{{feature.title}}</h3>
+                        <p>{{feature.descb}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+# Site settings
+title: Chronix
+subtitle: "A fast and efficient time series storage <br> based on Apache Lucene and Apache Solr"
+email: chronics@qaware.de
+url: https://chronics.io
+
+# Contact form: comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary:  80B3FF
+  header-bg:  1a5784
+  primary-rgb: "24,288,116" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+  third: f9f8f8
+
+# Footer settings
+footer:
+  copyright: Chronix
+  social: Around the Web
+  supported: Supporters
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/chronixDB
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/chronix
+  - title: github
+    url: https://github.com/chronixDB
+
+features:
+ - title: Easy to use
+   descb: Chronix is easy to use and integrated within minutes.
+   img: game.png
+ - title: Small
+   descb: Chronix stores time series highly compressed.
+   img: submarine.png
+ - title: Fast
+   descb: Chronix has very fast query and analysis times.
+   img: rocket.png
+ - title: Expressive
+   descb: Chronix has high-level query functions.
+   img: query.png
+
+# Credits content
+credits:
+ - icon: university
+   url: https://www.fau.eu
+ - icon: industry
+   url: http://www.qaware.de
+ - icon: university
+   url: http://www.vdivde-it.de/
+
+# Build settings
+markdown: kramdown
+permalink: pretty
