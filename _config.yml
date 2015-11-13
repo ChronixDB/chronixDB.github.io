@@ -18,9 +18,12 @@ color:
 
 # Footer settings
 footer:
-  copyright: Chronix
   social: Around the Web
   supported: Supporters
+
+copyright:
+  name: QAware GmbH
+  url: http://www.qaware.de/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
