@@ -1,8 +1,8 @@
 # Site settings
 title: Chronix
 subtitle: "A fast and efficient time series storage <br> based on Apache Lucene and Apache Solr"
-email: chronics@qaware.de
-url: https://chronics.io
+email: chronix@qaware.de
+url: https://chronix.io
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
