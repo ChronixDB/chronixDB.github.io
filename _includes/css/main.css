@@ -498,5 +498,23 @@ footer .footer-below {
 
 }
 
+.console {
+    border: 5px solid gray;
+}
+.teletype-prefix{
+    color: white;
+    font-family: "Courier New", Courier, monospace
+}
+.teletype-text{
+    color: white;
+    font-family: "Courier New", Courier, monospace
+}
 
+.teletype-cursor{
+    color: white;
+    font-family: "Courier New", Courier, monospace
+}
 
+.showConsoleButton{
+    font-family: "Courier New", Courier, monospace
+}
