@@ -117,7 +117,7 @@
         $("#chronix-javafx-console").empty();
 
         $("#chronix-javafx-console").each(function () {
-            var items = "cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\n;Setting up Chronix with an remote solr to url http://localhost:8983/solr/chronix/\n;Checking connection to solr. Result true\n";
+            var items = "cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\nSetting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/\nChecking connection to solr. Result true\n";
             var thing = $(this).empty().attr('title', '').teletype({
                 text: items.split(';'),
                 typeDelay: 10,
