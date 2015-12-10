@@ -11,50 +11,46 @@
         <div class="row">
             <div class="col-lg-12">
                 <p>
-                    Chronix natively speaks <b>time series</b> and its design allows you to store nearly every kind of
-                    data type within a time series. It let you decide how a time series look like.
-                    Chronix Kassiopeia is a specialized time series package that can easily plugged into Chronix.
-                    It also delivers some <b>high-level time series functions</b>, e.g., trend
-                    detection, frequencies, outliers. But you can decide if you want to use Kassiopeia or your custom
-                    time series within Chronix. All you have to do, is to implement a converter with two methods.
+                    Chronix natively speaks <b>time series</b>. You can store nearly every kind of
+                    data type within a time series due to its flexible design. You decide what a time series looks like.
+
+                    <br><br>
+
+                    Chronix Kassiopeia is a specialized time series package that can easily be added to Chronix.
+                    It provides a time series implementation and <b>high-level time series functions</b>, e.g., trend
+                    detection, frequencies, outliers. If Kassiopeia does not fit your needs, you can easily use your custom 
+                    time series within Chronix by implementing a converter with two methods.
 
                     <br><br>
 
                     Chronix is built to store time series highly compressed and for fast access times.
-                    On benchmarks Chronix not only takes 5 to 171 times less space than related time series databases
-                    to store time series data, but also saves up
-                    to 83&#37; of the
-                    access time, and up to 78&#37;
-                    of the runtime on a mix of real world queries.
+                    In comparison to related time series databases, Chronix does not only take 5 to 171 times less space,
+                    but it also shaves off 83&#37; of the access time, and up to 78&#37;
+                    off the runtime on a mix of real world queries.
                     For the measurements we used a commodity hardware laptop computer and Chronix using the Apache Solr
                     scenario (single node).
 
                     <br><br>
 
-                    Chronix comes with three different scenarios with different goals:
+                    Chronix supports three different scenarios, pursuing different goals:
                 </p>
                 <ol>
-                    <li><b>Chronix Storage</b> (based on <a href="https://lucene.apache.org/core/">Apache Lucene</a>)</li>
-                    <li><b>Chronix Server</b> (based on <a href="https://lucene.apache.org/solr/">Apache Solr</a>)</li>
-                    <li><b>Chronix Cluster</b> (based on <a href="http://spark.apache.org/">Apache Spark</a>)</li>
+                    <li><b>Chronix Storage:</b> Use Chronix as a small storage library and plug it into your
+                        application. It stores the time series using <a href="https://lucene.apache.org/core/">Apache Lucene</a>.
+                    </li>
+                    <li><b>Chronix Server:</b> Combine Chronix with <a href="https://lucene.apache.org/solr/">Apache Solr</a> for a typical client-server scenario.
+                        Apache Solr sports several useful features like scalability, fault tolerance, distributed indexing, or replication.
+                    </li>
+                    <li><b>Chronix Cluster:</b> Whenever you need a parallel and distributed time series processing,
+                    integrate Chronix with <a href="http://spark.apache.org/">Apache Spark</a>. Store the time series in a Chronix Storage and HDFS or in a Chronix Server cluster.
+                    Leverage Apache Spark to process the time series in parallel.
+                    </li>
                 </ol>
                 <p>
-                    You can use Chronix as a small storage library (<i>Scenario 1</i>) and plug it into your
-                    application. It then stores the time series using Apache Lucene.
-                    Or, if you need / prefer a typical client-server scenario use Chronix with Apache Solr (<i>Scenario
-                    2</i>). Apache Solr brings several useful features like scalability, fault tolerance, distributed
-                    indexing, or replication.
-                    When you need a parallel and distributed time series processing then use <i>Scenario 3</i> with
-                    Spark.
-                    Time series are stored in a Chronix Storage and HDFS or in a Chronix Server cluster.
-                    The integration of Chronix into Spark allows a parallel time series processing.
-
-                    <br><br>
-
                     Chronix is in a very early stage and hence there is a lot of work to do. Anyway! ;-)
                     We have several presentations and papers that describe the architecture and the main concepts of
                     Chronix.
-                    You will find the slides from the FOSDEM 2015 conference below. For more information about Chronix
+                    You will find the slides from the <a href="https://archive.fosdem.org/2015/schedule/event/apache_solr_as_a_compressed,_scalable_and_high_performance_time_series_database/">FOSDEM 2015</a> conference below. For more information about Chronix
                     and the current
                     development
                     check our <a href="https://github.com/ChronixDB">GitHub repository.</a>

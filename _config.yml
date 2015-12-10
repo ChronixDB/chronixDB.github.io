@@ -1,6 +1,6 @@
 # Site settings
 title: Chronix
-subtitle: "A fast and efficient time series storage <br> based on Apache Lucene and Apache Solr"
+subtitle: "A fast and efficient time series storage <br> based on Apache Lucene and Apache Solr."
 email: chronix@qaware.de
 url: https://chronix.io
 
