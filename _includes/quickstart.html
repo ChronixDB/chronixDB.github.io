@@ -3,88 +3,93 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Quick Start</h2>
+                <h2>Quickstart</h2>
                 <hr class="star-white">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
 
-            <p>
-                Get up and running with Chronix in <b>10 minutes</b> with our quickstart guide:.<br>
-            </p>
-            <!-- TODO use ordered list here? -->
-            <h4>1. Prerequisites</h4>
+                <p>
+                    Get up and running with Chronix in <b>3 minutes</b> with our quickstart guide:.<br>
+                </p>
+                <h4>Prerequisites</h4>
 
-            <p>
-                You need a Java 8 installed on your system. That's it :-)
-            </p>
-            <h4>2. Download</h4>
+                <p>
+                    You need a Java 8 installed on your system. That's it :-)
+                </p>
+                <h4>Download and Run</h4>
 
-            <p>
-                The Chronix showcase consists of two parts. The Chronix Server <a href="https://github.com/ChronixDB/chronix.server/releases"
-                title="Chronix Server">(download)</a> and an example JavaFX application <a href="https://github.com/ChronixDB/chronix.examples/releases" title="JavaFX Showcase">(download)</a> for
-                time series exploration (pick the latest release, respectively). Unzip the Chronix Server, the JavaFX part is an executable Java archive.
-            </p>
-
-            <h4>3. Run</h4>
-
-            <p>
-                The provided Chronix Server contains one week of operational time series data. Thus we can start the server and
-                everything is up and running.
-                Let's open a terminal and type the following commands to download and start the Chronix Server:
-                <br>TODO without download? repetition of previous text
-                <br>TODO remove animation, takes too long
-            </p>
-
-                <button id="console-server-button" class="showConsoleButton">
-                    Show statements
-                </button>
+                <p>
+                    The Chronix showcase consists of two parts. The Chronix Server <a
+                        href="https://github.com/ChronixDB/chronix.server/releases"
+                        title="Chronix Server">(download)</a> and an example JavaFX application <a
+                        href="https://github.com/ChronixDB/chronix.examples/releases"
+                        title="JavaFX Showcase">(download)</a> for
+                    time series exploration (pick the latest release, respectively). Unzip the Chronix Server (it
+                    contains one week of operational time series data), the JavaFX part is an executable Java archive.
+                    <br>
+                    Just use the following instructions:<br>
+                </p>
 
                 <div class="console">
-                    <div id="chronix-server-console"
-                         title="mkdir chronixShowcase\n;cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.server/releases/download/v0.0.2/chronix-0.0.2.zip\n;unzip chronix-0.0.2.zip\n;cd chronix-solr-5.3.1/\n;chmod +x bin/solr\n;export JAVA_HOME=/usr/lib/jvm/java-8-oracle/\n;./bin/solr start\nStarted Solr server on port 8983 (pid=3591). Happy searching!\n"
-                         class="type-text teletype-prefix">chronix@chronixDB:~$
-                    </div>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">mkdir chronixShowcase</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">cd chronixShowcase</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">wget https://github.com/ChronixDB/chronix.server/releases/download/v0.0.2/chronix-0.0.2.zip</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">unzip chronix-0.0.2.zip</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">cd chronix-solr-5.3.1/</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">chmod +x bin/solr</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">export JAVA_HOME=/usr/lib/jvm/java-8-oracle/</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">/bin/solr start</span><br>
+                    <span class="teletype-text">Started Solr server on port 8983 (pid=3591). Happy searching!</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span> <span class="teletype-cursor"
+                                                                                               style="opacity: 0.326941;">▋</span>
                 </div>
 
-            <p>
-                Chronix is now running on <span style="font-family: Courier">localhost:8983</span>.
-                Now we can start the JavaFX application.
-                Download the executable jar from GitHub and start it from the console.
-                <br>
-            </p>
-
-                <button id="console-javafx-button" class="showConsoleButton">Show statements</button>
+                <p>
+                    Chronix is now running on <span style="font-family: Courier">localhost:8983</span>.
+                    Now we can start the JavaFX application.
+                    Download the executable jar from GitHub and start it from the console:
+                    <br>
+                </p>
 
                 <div class="console">
-                    <div id="chronix-javafx-console"
-                         title="cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\nSetting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/\nChecking connection to solr. Result true\n"
-                         class="type-text teletype-prefix">chronix@chronixDB:~$
-                    </div>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">cd chronixShowcase</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">chmod +x chronix-timeseries-exploration.jar</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span><span class="teletype-text">java -jar chronix-timeseries-exploration.jar</span><br>
+                    <span class="teletype-text">Setting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/</span><br>
+                    <span class="teletype-text">Checking connection to solr. Result true.</span><br>
+                    <span class="type-text teletype-prefix">chronix@chronixDB:~$ </span> <span class="teletype-cursor"
+                                                                                               style="opacity: 0.326941;">▋</span>
                 </div>
 
-            <p>
-                With the running JavaFX application, we can query Chronix for time series data.
-                A simple query that delivers all time series whose metric name contains <span style="font-family: Courier">*Load*</span> looks like this:
-            </p>
-            <pre><code>metric:*Load*</code></pre>
+                <p>
+                    With the running JavaFX application, we can query Chronix for time series data.
+                    A simple query that delivers all time series whose metric name contains
+                    <span style="font-family: Courier">Load</span> is
+                    <span style="font-family: Courier">metric:*Load*</span>.
+                    Just enter the query term into the text box at the top and hit Shift + Enter to retrieve the result.
+                    Compute the maximum of the result we add a filter query
+                    <span style="font-family: Courier">ag=max</span> in the second text box and press again Shift + Enter.
+                    To check if the average load
+                    (<span style="font-family: Courier">metric:*Load*avg</span>)
+                    has a positive trend one can use the
+                    <span style="font-family: Courier">analysis=trend</span> function in the filter query text box.
+                    Starting the analysis by pressing Shift + Enter.
+                    These queries described and shown in the screencast represent only a few simple queries, check out our <a
+                        href="https://github.com/ChronixDB/chronix.examples">examples
+                    repository</a> for more details.
 
-            <p>
-                Just enter the query term into the text box and hit Shift+Enter to retrieve the result:
-            </p>
+                </p>
 
-
-            <p>
-                <br>The following query returns the maximum value for the <span style="font-family: Courier">*Load*</span> query:
-            </p>
-            <pre><code>ag=max</code></pre>
-
-            <p>
-                <br>These examples represent only two simple queries, check out our <a href="https://github.com/ChronixDB/chronix.examples">examples
-                repository</a> for more details.
-            </p>
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video controls preload="metadata" class="embed-responsive-item">
+                        <source src=https://bintray.com/artifact/download/chronix/Recordings/Chronix-Screencast.mp4
+                                type=video/mp4>
+                    </video>
+                </div>
+            </div>
         </div>
-    </div>
 </section>
 
