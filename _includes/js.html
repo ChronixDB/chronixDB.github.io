@@ -29,3 +29,32 @@
     ga('send', 'pageview');
 
  </script>
+
+
+ <script>
+     $(function ($) {
+         function initConsole ($button, $console) {
+             $button.remove();
+
+             var items = $console.attr('title').split(';');
+             $console.removeAttr('title').teletype({
+                 text: items,
+                 typeDelay: 10,
+                 backDelay: 5,
+                 cursor: '▋',
+                 delay: 1000,
+                 preserve: true,
+                 prefix: 'chronix@chronixDB:~$ ',
+                 loop: 1
+             });
+         }
+
+         $('#console-server-button').on('click', function () {
+             initConsole($(this), $("#chronix-server-console"));
+         });
+
+         $('#console-javafx-button').on('click', function () {
+             initConsole($(this), $("#chronix-javafx-console"));
+         });
+     });
+ </script>

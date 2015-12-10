@@ -45,15 +45,15 @@
                 everything is up and running.
                 Let's open a terminal and type the following commands to download and start the Chronix Server:
             </p>
-            <button onclick="doConsoleServer()" class="showConsoleButton">Show statements</button>
-            <div style="border: 2px solid gray; background: gray;">
-                <div class="type-text-chronix-server" title=""></div>
-            </div>
 
-            <div style="border: 2px solid gray; background: gray;">
-                <div id="chronix-server-console" class="type-text, teletype-prefix" title="">
-                    chronix@chronixDB:~$
-                </div>
+            <button id="console-server-button" class="showConsoleButton">
+                Show statements
+            </button>
+
+            <div class="console">
+                <div id="chronix-server-console"
+                     title="mkdir chronixShowcase\n;cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.server/releases/download/v0.0.2/chronix-0.0.2.zip\n;unzip chronix-0.0.2.zip\n;cd chronix-solr-5.3.1/\n;chmod +x bin/solr\n;export JAVA_HOME=/usr/lib/jvm/java-8-oracle/\n;./bin/solr start\nStarted Solr server on port 8983 (pid=3591). Happy searching!\n"
+                     class="type-text teletype-prefix">chronix@chronixDB:~$</div>
             </div>
 
             <p>
@@ -62,11 +62,13 @@
                 Download the executable jar from GitHub and start it from the console.
                 <br>
             </p>
-            <button onclick="doConsoleJavaFX()" class="showConsoleButton">Show statements</button>
-            <div style="border: 2px solid gray; background: gray;">
-                <div id="chronix-javafx-console" class="type-text, teletype-prefix" title="">
-                    chronix@chronixDB:~$
-                </div>
+
+            <button id="console-javafx-button" class="showConsoleButton">Show statements</button>
+
+            <div class="console">
+                <div id="chronix-javafx-console"
+                     title="cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\nSetting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/\nChecking connection to solr. Result true\n"
+                     class="type-text teletype-prefix">chronix@chronixDB:~$</div>
             </div>
 
             <p>
@@ -90,46 +92,4 @@
         </div>
     </div>
 </section>
-
-
-<script>
-    function doConsoleServer() {
-        $("#chronix-server-console").empty();
-
-        $("#chronix-server-console").each(function () {
-            var items = "mkdir chronixShowcase\n;cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.server/releases/download/v0.0.2/chronix-0.0.2.zip\n;unzip chronix-0.0.2.zip\n;cd chronix-solr-5.3.1/\n;chmod +x bin/solr\n;export JAVA_HOME=/usr/lib/jvm/java-8-oracle/\n;./bin/solr start\nStarted Solr server on port 8983 (pid=3591). Happy searching!\n";
-            var thing = $(this).empty().attr('title', '').teletype({
-                text: items.split(';'),
-                typeDelay: 10,
-                backDelay: 5,
-                cursor: '▋',
-                delay: 1000,
-                preserve: true,
-                prefix: 'chronix@chronixDB:~$ ',
-                loop: 1
-            });
-        });
-    }
-</script>
-
-<script>
-    function doConsoleJavaFX() {
-        $("#chronix-javafx-console").empty();
-
-        $("#chronix-javafx-console").each(function () {
-            var items = "cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\nSetting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/\nChecking connection to solr. Result true\n";
-            var thing = $(this).empty().attr('title', '').teletype({
-                text: items.split(';'),
-                typeDelay: 10,
-                backDelay: 5,
-                cursor: '▋',
-                delay: 1000,
-                preserve: true,
-                prefix: 'chronix@chronixDB:~$ ',
-                loop: 1
-            });
-        });
-    }
-</script>
-
 

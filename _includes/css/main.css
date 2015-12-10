@@ -499,20 +499,23 @@ footer .footer-below {
 }
 
 .console {
-    border: 5px solid gray;
-}
-.teletype-prefix{
-    color: white;
+    border: 1px solid silver;
+    background: rgba(0, 0, 0, .8);
+    box-shadow: 2px 3px 5px gray;
+    margin: 1em 0;
+    padding: .75em;
     font-family: "Courier New", Courier, monospace
+}
+
+.teletype-prefix{
+    color: cyan;
 }
 .teletype-text{
-    color: white;
-    font-family: "Courier New", Courier, monospace
+    color: lightcyan;
 }
 
 .teletype-cursor{
     color: white;
-    font-family: "Courier New", Courier, monospace
 }
 
 .showConsoleButton{
