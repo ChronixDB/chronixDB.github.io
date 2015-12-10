@@ -16,18 +16,19 @@
                 <h4>Prerequisites</h4>
 
                 <p>
-                    You need a Java 8 installed on your system. That's it :-)
+                    You need Java 8 installed on your system. That's it :-)
                 </p>
                 <h4>Download and Run</h4>
 
                 <p>
-                    The Chronix showcase consists of two parts. The Chronix Server <a
-                        href="https://github.com/ChronixDB/chronix.server/releases"
-                        title="Chronix Server">(download)</a> and an example JavaFX application <a
-                        href="https://github.com/ChronixDB/chronix.examples/releases"
-                        title="JavaFX Showcase">(download)</a> for
-                    time series exploration (pick the latest release, respectively). Unzip the Chronix Server (it
-                    contains one week of operational time series data), the JavaFX part is an executable Java archive.
+                    The Chronix showcase consists of two parts. Pick the latest releases of the Chronix Server
+                    <a href="https://github.com/ChronixDB/chronix.server/releases" title="Chronix Server">(download)</a>
+                    and an example JavaFX application
+                    <a href="https://github.com/ChronixDB/chronix.examples/releases"
+                       title="JavaFX Showcase">(download)</a>
+                    for time series exploration.
+                    Unzip the Chronix Server (it contains one week of operational time series data), the JavaFX
+                    application is an executable Java archive.
                     <br>
                     Just use the following instructions:<br>
                 </p>
@@ -65,19 +66,21 @@
                 </div>
 
                 <p>
-                    With the running JavaFX application, we can query Chronix for time series data.
-                    A simple query that delivers all time series whose metric name contains
+                    With the running JavaFX application, you can query Chronix for time series data.
+                    For example, a simple query that delivers all time series data whose metric name contains
                     <span style="font-family: Courier">Load</span> is
                     <span style="font-family: Courier">metric:*Load*</span>.
                     Just enter the query term into the text box at the top and hit Shift + Enter to retrieve the result.
-                    Compute the maximum of the result we add a filter query
-                    <span style="font-family: Courier">ag=max</span> in the second text box and press again Shift + Enter.
+                    To compute the maximum of that result you add a filter query
+                    <span style="font-family: Courier">ag=max</span> in the second text box and press again Shift +
+                    Enter.
                     To check if the average load
                     (<span style="font-family: Courier">metric:*Load*avg</span>)
-                    has a positive trend one can use the
+                    has a positive trend you can use the
                     <span style="font-family: Courier">analysis=trend</span> function in the filter query text box.
-                    Starting the analysis by pressing Shift + Enter.
-                    These queries described and shown in the screencast represent only a few simple queries, check out our <a
+                    You start the analysis by pressing Shift + Enter.
+                    The queries described and shown in the screencast represent only a few simple queries, check out
+                    our <a
                         href="https://github.com/ChronixDB/chronix.examples">examples
                     repository</a> for more details.
 
