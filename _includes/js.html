@@ -1,9 +1,6 @@
  <!-- jQuery Version 1.11.0 -->
     <script src="{{ "/js/jquery-1.11.0.js" }}"></script>
 
- <!-- Animated Text -->
-    <script src="{{ "/js/jquery.teletype.js" }}"></script>
-
  <!-- Bootstrap Core JavaScript -->
     <script src="{{ "/js/bootstrap.min.js" }}"></script>
 
@@ -30,33 +27,17 @@
 
  </script>
 
-<!--
  <script>
-     $(function ($) {
-         function initConsole ($button, $console) {
-             $button.remove();
+     $(document).ready(function() {
+         setInterval('cursorAnimation()', 800);
+     });
 
-             var items = $console.attr('title').split(';');
-             $console.removeAttr('title').teletype({
-                 text: items,
-                 typeDelay: 0,
-                 backDelay: 0,
-                 cursor: '▋',
-                 delay: 0,
-                 preserve: true,
-                 prefix: 'chronix@chronixDB:~$ ',
-                 loop: 1
-             });
+         function cursorAnimation() {
+             $('.teletype-cursor').animate({
+                 opacity: 0
+             }, 'fast', 'swing').animate({
+                 opacity: 1
+             }, 'fast', 'swing');
          }
 
-         $('#console-server-button').on('click', function () {
-             initConsole($(this), $("#chronix-server-console"));
-         });
-
-         $('#console-javafx-button').on('click', function () {
-             initConsole($(this), $("#chronix-javafx-console"));
-         });
-     });
  </script>
-
- -->
