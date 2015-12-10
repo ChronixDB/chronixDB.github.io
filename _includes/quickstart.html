@@ -10,41 +10,32 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <p>
-                    The quickstart guide show how to run and play with Chronix within <b>10 minutes</b> from now.<br>
-                </p>
-                <h4>1. Prerequisites</h4>
+            <p>
+                Get up and running with Chronix in <b>10 minutes</b> with our quickstart guide:.<br>
+            </p>
+            <!-- TODO use ordered list here? -->
+            <h4>1. Prerequisites</h4>
 
-                <p>
-                    To run the Chronix showcase you need Java 8 installed on your system. That's all :-)
-                </p>
-                <h4>2. Download the Chronix Showcase</h4>
+            <p>
+                You need a Java 8 installed on your system. That's it :-)
+            </p>
+            <h4>2. Download</h4>
 
-                <p>
-                    The Chronix showcase consists of two parts. The Chronix Server and an example JavaFX application for
-                    time series exploration.
-                    Both can be downloaded from the GitHub repository (take the latest release).
-                </p>
-                <ol>
-                    <li>Chronix Server: <a href="https://github.com/ChronixDB/chronix.server/releases"
-                                           title="Chronix Server">Download</a>
-                    </li>
-                    <li>Chronix JavaFX Showcase: <a href="https://github.com/ChronixDB/chronix.examples/releases"
-                                                    title="JavaFX Showcase">Download</a>
-                    </li>
-                </ol>
-                <p>
-                    The Chronix Server is a zip archive that have to be extracted.
-                    The Chronix JavaFX is an executable java archive.<br>
-                </p>
+            <p>
+                The Chronix showcase consists of two parts. The Chronix Server <a href="https://github.com/ChronixDB/chronix.server/releases"
+                title="Chronix Server">(download)</a> and an example JavaFX application <a href="https://github.com/ChronixDB/chronix.examples/releases" title="JavaFX Showcase">(download)</a> for
+                time series exploration (pick the latest release, respectively). Unzip the Chronix Server, the JavaFX part is an executable Java archive.
+            </p>
 
-                <h4>3. Run the Chronix Showcase </h4>
+            <h4>3. Run</h4>
 
-                <p>
-                    Chronix Server contains one week of operational time series data. Thus we can start the server and
-                    everything is up and running.
-                    Let's open a terminal and type the following commands to download and start the Chronix Server:
-                </p>
+            <p>
+                The provided Chronix Server contains one week of operational time series data. Thus we can start the server and
+                everything is up and running.
+                Let's open a terminal and type the following commands to download and start the Chronix Server:
+                <br>TODO without download? repetition of previous text
+                <br>TODO remove animation, takes too long
+            </p>
 
                 <button id="console-server-button" class="showConsoleButton">
                     Show statements
@@ -57,12 +48,12 @@
                     </div>
                 </div>
 
-                <p>
-                    Chronix is now running on localhost:8983.
-                    Now we can start the JavaFX application.
-                    Download the executable jar from GitHub and start it from the console.
-                    <br>
-                </p>
+            <p>
+                Chronix is now running on <span style="font-family: Courier">localhost:8983</span>.
+                Now we can start the JavaFX application.
+                Download the executable jar from GitHub and start it from the console.
+                <br>
+            </p>
 
                 <button id="console-javafx-button" class="showConsoleButton">Show statements</button>
 
@@ -73,26 +64,26 @@
                     </div>
                 </div>
 
-                <p>
-                    If everything works the JavaFX application starts and we can ask Chronix for time series data.
-                    A simple query that delivers all time series that metric contains *Load* is "metric:*Load*".
-                    To get the maximum value for the *Load* query just enter the filter query "ag=max".
-                </p>
+            <p>
+                With the running JavaFX application, we can query Chronix for time series data.
+                A simple query that delivers all time series whose metric name contains <span style="font-family: Courier">*Load*</span> looks like this:
+            </p>
+            <pre><code>metric:*Load*</code></pre>
+
+            <p>
+                Just enter the query term into the text box and hit Shift+Enter to retrieve the result:
+            </p>
 
 
-                <div align="center" class="embed-responsive embed-responsive-16by9">
-                    <video controls preload="metadata" class="embed-responsive-item">
-                        <source src=https://bintray.com/artifact/download/chronix/Recordings/Chronix-Screencast.mp4 type=video/mp4>
-                    </video>
-                </div>
+            <p>
+                <br>The following query returns the maximum value for the <span style="font-family: Courier">*Load*</span> query:
+            </p>
+            <pre><code>ag=max</code></pre>
 
-                <p>
-                    That are only two simple queries.
-                    For more details check out our <a href="https://github.com/ChronixDB/chronix.examples"> GitHub
-                    Examples
-                    Repository.</a>
-                </p>
-            </div>
+            <p>
+                <br>These examples represent only two simple queries, check out our <a href="https://github.com/ChronixDB/chronix.examples">examples
+                repository</a> for more details.
+            </p>
         </div>
     </div>
 </section>
