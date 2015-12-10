@@ -8,87 +8,91 @@
             </div>
         </div>
         <div class="row">
-            <p class="col-lg-12">
+            <div class="col-lg-12">
 
-            <p>
-                The quickstart guide show how to run and play with Chronix within <b>10 minutes</b> from now.<br>
-            </p>
-            <h4>1. Prerequisites</h4>
+                <p>
+                    The quickstart guide show how to run and play with Chronix within <b>10 minutes</b> from now.<br>
+                </p>
+                <h4>1. Prerequisites</h4>
 
-            <p>
-                To run the Chronix showcase you need Java 8 installed on your system. That's all :-)
-            </p>
-            <h4>2. Download the Chronix Showcase</h4>
+                <p>
+                    To run the Chronix showcase you need Java 8 installed on your system. That's all :-)
+                </p>
+                <h4>2. Download the Chronix Showcase</h4>
 
-            <p>
-                The Chronix showcase consists of two parts. The Chronix Server and an example JavaFX application for
-                time series exploration.
-                Both can be downloaded from the GitHub repository (take the latest release).
-            </p>
-            <ol>
-                <li>Chronix Server: <a href="https://github.com/ChronixDB/chronix.server/releases"
-                                       title="Chronix Server">Download</a>
-                </li>
-                <li>Chronix JavaFX Showcase: <a href="https://github.com/ChronixDB/chronix.examples/releases"
-                                                title="JavaFX Showcase">Download</a>
-                </li>
-            </ol>
-            <p>
-                The Chronix Server is a zip archive that have to be extracted.
-                The Chronix JavaFX is an executable java archive.<br>
-            </p>
+                <p>
+                    The Chronix showcase consists of two parts. The Chronix Server and an example JavaFX application for
+                    time series exploration.
+                    Both can be downloaded from the GitHub repository (take the latest release).
+                </p>
+                <ol>
+                    <li>Chronix Server: <a href="https://github.com/ChronixDB/chronix.server/releases"
+                                           title="Chronix Server">Download</a>
+                    </li>
+                    <li>Chronix JavaFX Showcase: <a href="https://github.com/ChronixDB/chronix.examples/releases"
+                                                    title="JavaFX Showcase">Download</a>
+                    </li>
+                </ol>
+                <p>
+                    The Chronix Server is a zip archive that have to be extracted.
+                    The Chronix JavaFX is an executable java archive.<br>
+                </p>
 
-            <h4>3. Run the Chronix Showcase </h4>
+                <h4>3. Run the Chronix Showcase </h4>
 
-            <p>
-                Chronix Server contains one week of operational time series data. Thus we can start the server and
-                everything is up and running.
-                Let's open a terminal and type the following commands to download and start the Chronix Server:
-            </p>
+                <p>
+                    Chronix Server contains one week of operational time series data. Thus we can start the server and
+                    everything is up and running.
+                    Let's open a terminal and type the following commands to download and start the Chronix Server:
+                </p>
 
-            <button id="console-server-button" class="showConsoleButton">
-                Show statements
-            </button>
+                <button id="console-server-button" class="showConsoleButton">
+                    Show statements
+                </button>
 
-            <div class="console">
-                <div id="chronix-server-console"
-                     title="mkdir chronixShowcase\n;cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.server/releases/download/v0.0.2/chronix-0.0.2.zip\n;unzip chronix-0.0.2.zip\n;cd chronix-solr-5.3.1/\n;chmod +x bin/solr\n;export JAVA_HOME=/usr/lib/jvm/java-8-oracle/\n;./bin/solr start\nStarted Solr server on port 8983 (pid=3591). Happy searching!\n"
-                     class="type-text teletype-prefix">chronix@chronixDB:~$</div>
+                <div class="console">
+                    <div id="chronix-server-console"
+                         title="mkdir chronixShowcase\n;cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.server/releases/download/v0.0.2/chronix-0.0.2.zip\n;unzip chronix-0.0.2.zip\n;cd chronix-solr-5.3.1/\n;chmod +x bin/solr\n;export JAVA_HOME=/usr/lib/jvm/java-8-oracle/\n;./bin/solr start\nStarted Solr server on port 8983 (pid=3591). Happy searching!\n"
+                         class="type-text teletype-prefix">chronix@chronixDB:~$
+                    </div>
+                </div>
+
+                <p>
+                    Chronix is now running on localhost:8983.
+                    Now we can start the JavaFX application.
+                    Download the executable jar from GitHub and start it from the console.
+                    <br>
+                </p>
+
+                <button id="console-javafx-button" class="showConsoleButton">Show statements</button>
+
+                <div class="console">
+                    <div id="chronix-javafx-console"
+                         title="cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\nSetting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/\nChecking connection to solr. Result true\n"
+                         class="type-text teletype-prefix">chronix@chronixDB:~$
+                    </div>
+                </div>
+
+                <p>
+                    If everything works the JavaFX application starts and we can ask Chronix for time series data.
+                    A simple query that delivers all time series that metric contains *Load* is "metric:*Load*".
+                    To get the maximum value for the *Load* query just enter the filter query "ag=max".
+                </p>
+
+
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video controls preload="metadata" class="embed-responsive-item">
+                        <source src=https://bintray.com/artifact/download/chronix/Recordings/Chronix-Screencast.mp4 type=video/mp4>
+                    </video>
+                </div>
+
+                <p>
+                    That are only two simple queries.
+                    For more details check out our <a href="https://github.com/ChronixDB/chronix.examples"> GitHub
+                    Examples
+                    Repository.</a>
+                </p>
             </div>
-
-            <p>
-                Chronix is now running on localhost:8983.
-                Now we can start the JavaFX application.
-                Download the executable jar from GitHub and start it from the console.
-                <br>
-            </p>
-
-            <button id="console-javafx-button" class="showConsoleButton">Show statements</button>
-
-            <div class="console">
-                <div id="chronix-javafx-console"
-                     title="cd chronixShowcase\n;wget https://github.com/ChronixDB/chronix.examples/releases/download/v0.0.2/chronix-timeseries-exploration.jar\n;chmod +x chronix-timeseries-exploration.jar\n;java -jar chronix-timeseries-exploration.jar\nSetting up Chronix with a remote solr to URL http://localhost:8983/solr/chronix/\nChecking connection to solr. Result true\n"
-                     class="type-text teletype-prefix">chronix@chronixDB:~$</div>
-            </div>
-
-            <p>
-                If everything works the JavaFX application starts and we can ask Chronix for time series data.
-                A simple query that delivers all time series that metric contains *Load* is:
-            </p>
-            <pre><code>metric:*Load*</code></pre>
-            <img class="img-responsive" src="img/quickstart/chronix-fx-showcase.png" alt="">
-
-            <p>
-                To get the maximum value for the *Load* query just enter the following filter query
-            </p>
-            <pre><code>ag=max</code></pre>
-            <img class="img-responsive" src="img/quickstart/chronix-fx-showcase-max.png" alt="">
-
-            <p>
-                That are only two simple queries.
-                For more details check out our <a href="https://github.com/ChronixDB/chronix.examples"> GitHub Examples
-                Repository.</a>
-            </p>
         </div>
     </div>
 </section>
