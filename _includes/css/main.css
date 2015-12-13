@@ -512,6 +512,7 @@ footer .footer-below {
 }
 .teletype-text{
     color: lightcyan;
+    word-wrap: break-word;
 }
 
 .teletype-cursor{
