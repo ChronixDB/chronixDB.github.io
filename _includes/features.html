@@ -8,18 +8,60 @@
             </div>
         </div>
         <div class="row">
-            {% for feature in site.features %}
-            <div class="col-sm-3">
+
+            <!-- Features -->
+            <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="img/features/{{ feature.img }}" alt="{{ feature.alt }}">
-                    
+                    <img src="img/features/game.png" alt="easy">
                     <div class="caption text-center">
-                        <h3>{{feature.title}}</h3>
-                        <p>{{feature.descb}}</p>
+                        <h3>Easy to use</h3>
+                        <p>Chronix is easy to use and integrated within minutes.</p>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="img/features/submarine.png" alt="small">
+                    <div class="caption text-center">
+                        <h3>Small</h3>
+                        <p>Chronix stores time series highly compressed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="img/features/rocket.png" alt="fast">
+                    <div class="caption text-center">
+                        <h3>Fast</h3>
+                        <p>Chronix has very fast query and analysis times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Second row -->
+            <div class="col-sm-4 col-sm-offset-2">
+                <div class="thumbnail">
+                    <img src="img/features/query.png" alt="expressive">
+                    <div class="caption text-center">
+                        <h3>Expressive</h3>
+                        <p>Chronix has high-level query functions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="img/features/guarantee.png" alt="expressive">
+                    <div class="caption text-center">
+                        <h3>Non-Commercial</h3>
+                        <p>Chronix is free to use for everyone and forever.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

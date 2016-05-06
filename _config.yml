@@ -2,7 +2,7 @@
 title: Chronix
 subtitle: "A fast and efficient time series storage <br> based on Apache Lucene and Apache Solr."
 email: chronix@qaware.de
-url: http://chronix.io
+url: http://www.chronix.io
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -33,24 +33,6 @@ social:
     url: http://stackoverflow.com/questions/tagged/chronix
   - title: github
     url: https://github.com/chronixDB
-
-features:
- - title: Easy to use
-   descb: Chronix is easy to use and integrated within minutes.
-   img: game.png
-   alt: Game-Image
- - title: Small
-   descb: Chronix stores time series highly compressed.
-   img: submarine.png
-   alt: Submarine-Image
- - title: Fast
-   descb: Chronix has very fast query and analysis times.
-   img: rocket.png
-   alt: Rocket-Image
- - title: Expressive
-   descb: Chronix has high-level query functions.
-   img: query.png
-   alt: Query-Image
 
 # Credits content
 credits:
